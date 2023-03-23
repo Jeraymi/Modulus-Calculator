@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Modulus Calculator</title>
+
+        <style>
+
+            body {background-color: black;}
+
+.buton{
+   width:86.6px;
+   height:50px;
+   color: white;
+    background-color:gold;
+}
+#btnC{ background-color: gold;}
+
+#disp {
+   width:260px;
+   height:50px;
+   border-radius:6px;
+   color: white;}
+
+input[value="0"],input[value="1"],
+input[value="2"],input[value="3"],
+input[value="4"],input[value="5"],
+input[value="6"],input[value="7"],
+input[value="8"],input[value="9"],
+input[value="/"],input[value="+"],
+input[value="-"],input[value="*"],
+input[value="."],input[value="%"],
+input[value="="],input[value="Clear"] {
+   border-radius:6px;
+   font-size:18px;
+   border-top-color:#A2B0C2;
+   border-bottom-color:#A2B0C2;
+   border-right-color:#A2B0C2;
+   border-left-color:#A2B0C2; }
+
+   </style>
+
+    </head>
+
+    <!--By Jeremiah Anazodo-->
+
+    <body>
+
+        <h1 align="center"><b><big><i>Modulus Calculator</i></big></b></h1>
+
+        <hr color>
+        <form name="calc">
+
+
+            <table align="center">
+                <tr>
+                    <td><input id="disp" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                            type="text"></td>
+                </tr>
+            </table>
+
+
+
+
+
+            <table align="center">
+                <tr>
+                    <td><input type=button id="btnC" value="Clear" OnClick="calc.display.value=''"></td>
+                </tr>
+            </table>
+
+            <table align="center">
+                <tr>
+                    <td><input type="button" id="btn7" class="buton" value="7" onclick="calc.display.value+='7'"></td>
+                    <td><input type="button" id="btn8" class="buton" value="8" onclick="calc.display.value+='8'"></td>
+                    <td><input type="button" id="btn9" class="buton" value="9" onclick="calc.display.value+='9'"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="button" id="btn4" class="buton" value="4" onclick="calc.display.value+='4'"></td>
+                    <td><input type="button" id="btn5" class="buton" value="5" onclick="calc.display.value+='5'"></td>
+                    <td><input type="button" id="btn6" class="buton" value="6" onclick="calc.display.value+='6'"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="button" id="btn1" class="buton" value="1" onclick="calc.display.value+='1'"></td>
+                    <td><input type="button" id="btn2" class="buton" value="2" onclick="calc.display.value+='2'"></td>
+                    <td><input type="button" id="btn3" class="buton" value="3" onclick="calc.display.value+='3'"></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="button" id="btn0" class="buton" value="0" onclick="calc.display.value+='0'"></td>
+                    <td><input type="button" id="dot" class="buton" value="." onclick="calc.display.value+='.'"></td>
+                    <td><input type="button" class="buton" name="addition" value="+" onclick="calc.display.value+='+'">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="buton" name="divide" value="/" onclick="calc.display.value+='/'">
+                    </td>
+                    <td><input type="button" class="buton" name="multiply" value="*" onclick="calc.display.value+='*'">
+                    </td>
+                    <td><input type="button" class="buton" name="subtract" value="-" onclick="calc.display.value+='-'">
+                    </td>
+
+                </tr>
+            </table>
+            <table align="center">
+                <tr>
+                    <td><input type=button id="btnM" class="buton" value="%" OnClick="calc.display.value+='%'"></td>
+
+                    <td><input type=button id="btnE" class="buton" value="="
+                            OnClick="calc.display.value=eval(calc.display.value)"></td>
+                </tr>
+            </table>
+
+
+            <hr color>
+            <h3>
+                <marquee>By Jeremiah Anazodo</marquee>
+            </h3>
+
+            <!--By Jeremiah Anazodo-->
+
+        </form>
+
+        <script>
+            alert("Welcome to my Modulus Calculator :)) Hope You Enjoy :)");
+
+        </script>
+    </body>
+
+</html>
